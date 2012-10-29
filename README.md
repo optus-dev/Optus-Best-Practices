@@ -19,3 +19,9 @@ Folder Structure
     *   functions
     *   behaviours
 *   release
+
+Testing
+-------
+
+*   Jasmine
+*   Sinon
