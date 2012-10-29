@@ -23,5 +23,8 @@ Folder Structure
 Testing
 -------
 
-*   Jasmine
-*   Sinon
+All JS should be developed using TDD. A high level of test coverage with suitable assertions is expected.
+
+We use [Jasmine](http://pivotal.github.com/jasmine/) for writing tests and [Sinon](http://sinonjs.org/) for stubs and mocks.
+
+Specs should be saved with the `.spec.js` extension.
