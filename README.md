@@ -6,7 +6,7 @@ A place to collectively work on establishing JavaScript best practices for the O
 Code Conventions
 ----------------
 
-[Coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/). At Optus, our coding style is based on the style [documented by Douglas Crockford](http://javascript.crockford.com/code.html), however we have some exceptions.
+[Coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/). At Optus, our coding style is based on [the style documented by Douglas Crockford](http://javascript.crockford.com/code.html), however we have some exceptions.
 
 1.  **Do not use `$` (dollar sign) or `\` (backslash) in names.**
     
