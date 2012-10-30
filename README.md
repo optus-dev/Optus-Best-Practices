@@ -6,7 +6,29 @@ A place to collectively work on establishing JavaScript best practices for the O
 Code Conventions
 ----------------
 
-[Coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/). At Optus, we follow the style [documented by Douglas Crockford](http://javascript.crockford.com/code.html).
+[Coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/). At Optus, our coding style is based on the style [documented by Douglas Crockford](http://javascript.crockford.com/code.html), however we have some exceptions.
+
+1.  **Do not use `$` (dollar sign) or `\` (backslash) in names.**
+    
+    We use `$` at the beginning of some variable names to indicate that they are jQuery objects.
+    
+2.  **Avoid lines longer than 80 characters.**
+    
+    We aren’t writing code on tiny 640x480 screens anymore so we can accommodate slightly longer lines than 80 chars. We don’t have a hard limit, but be sensible. Anything longer than about 120 chars and you should think about breaking it up.
+    
+3.  **Variables should be listed in alphabetical order.**
+    
+    This is arbitrary and there is no good reason for enforcing this rule. Order variables logically, and feel free to separate logical groups of variables with an empty line.
+    
+On top of this, we also have some conventions of our own.
+
+1.  Variable and function names should be in `camelCase`.
+
+2.  Do not use the `for (variable in object)` syntax for `for` loops. Its behaviour is confusing and can lead to less than obvious bugs. Instead we should use generic iterators, such as the `$.each` function provided by jQuery.
+
+3.  Do not wrap all of your code in closures. It is unnecessary boilerplate code. That said, care should be taken when adding global variables – if I see any unnecessary global vars it will result in 45 mins in the naughty corner.
+
+4.  Do not write your code in strict mode. It provides no benefits that will not be found by linting your code and also has no performance benefits.
 
 Folder Structure
 ----------------
